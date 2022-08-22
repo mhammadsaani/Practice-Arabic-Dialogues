@@ -1,0 +1,79 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* overflow: hidden; */
+}
+
+:root {
+  --teal: #204646;
+  --lavender: #dedede;
+}
+
+body {
+  color: var(--lavender);
+  text-align: center;
+}
+
+/* Utility Classes */
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Actual Styling */
+
+/* ========
+    header
+   ========
+*/
+
+.header {
+  font-family: "Aboreto", cursive;
+  background-color: var(--teal);
+  height: 40vh;
+  padding: 2em;
+}
+
+/* ========
+     main
+   ========
+*/
+
+.main {
+  background-color: var(--lavender);
+  color: var(--teal);
+  height: 60vh;
+  padding: 5em 1em;
+}
+
+.main-heading {
+  font-size: 2rem;
+  margin-bottom: 2em;
+}
+
+.main-items {
+  font-size: 1.2rem;
+}
+
+.main-items a {
+  text-align: center;
+  padding: 1em;
+  color: var(--teal);
+  transition: all 0.5s;
+}
+
+.main-items a:first-child {
+  border-right: 2px solid rgb(6, 46, 6);
+}
+
+.main-items a:hover,
+.main-items a:focus {
+  cursor: pointer;
+  transform: scale(1.1);
+  border: none;
+}
