@@ -1,18 +1,61 @@
 const dialoguesData = {
-  "میں فری ہوں": "انا فادی",
+  "میں فری ہوں": "اَنَا فَادِی",
   "کوئی بات نہیں": "لا بأس",
+  "Don't panic / worry": "لا تقلق",
+  "میں نہیں جانتا": "لا اَدْرِی",
+  "مجھے معاف کرے": "انا آسفٌ",
+  "تمام اچھا ہے": "کُلُّ شَئْیٍ عَلیٰ مَا یَرَام",
+  "گھر کے حالات کیسے ہیں": "کَیْفَ الزَّرُوفُ فی البَیْتْ",
+  اچھا: "جَیِّد",
+  "کیا چل رہا ہے. / حالات کیسے ہیں": "مَا الاَخْبَار",
+  "میں مصروف ہوں": "اَنَا مَشْغُول",
+  "See u tomorrow": "اَرَاکَ غَدَاً",
+  "do not worry / never mind / forget it": "لا عَلَیْک",
+  "Wait for me": "اِنْتَظِرْنی",
+  "Thanks a lot": "شكراً جَزِيْلَاً",
+  "I understand": "أفْھَمْ",
+  "i am sure": "انا مُتَأکِّدٌ",
+  "This is not right": "هذا لَیْسَ صَحَیْحًا",
+  "do u have any question": "هل لديك أيُ سؤال",
+  Ofcourse: "طَبْعًا / قَطْعًا",
+  "I am ready": "انا جاھِز",
+  "Don't eat too much": "لا تاکلْ کثیرا",
+  "What is new?": "ماالجدید",
+  "Good luck / Best of luck": "بالتوفیق",
+  "This is from Allah ": "و ما توفیق آلا باللہ",
+  "Allah guides us": "اللہ یھدیک",
+  "Allah protects us": "اللہ حِفظُک",
+  "Who is with you?": "من معک",
+  "Don't disturb me": "لا تُزعِجنِي",
+  Yes: "نعم/ أجَل / بَلیٰ",
+  "Who said this?": "من قال ذلک",
+  "This is great": "هذا رائِعٌ / عظیم",
 };
 
 const urduDialogues = Object.keys(dialoguesData);
-console.log(urduDialogues);
-// console.log(dialoguesData["i am free"]);
+const englishDialogues = Object.values(dialoguesData);
 
 const quizEl = document.getElementsByClassName("quiz")[0];
 const answerEl = document.getElementsByClassName("answer")[0];
+const nextBtnEl = document.getElementsByClassName("next-btn")[0];
+const showBtnEl = document.getElementsByClassName("show-answer")[0];
 
-document
-  .getElementsByClassName("show-answer")[0]
-  .addEventListener("click", function () {
-    const eng = quizEl.textContent.toLowerCase();
-    answerEl.textContent = dialoguesData[eng];
-  });
+function randomIndex(array) {
+  let randomIndx = Math.floor(Math.random() * array.length);
+  return randomIndx;
+}
+
+showBtnEl.addEventListener("click", function () {
+  const arabicDialogue = quizEl.textContent;
+  answerEl.textContent = dialoguesData[arabicDialogue];
+});
+
+nextBtnEl.addEventListener("click", function () {
+  let urduDialogueIndx = randomIndex(urduDialogues);
+  while (urduDialogues[urduDialogueIndx] === quizEl.textContent) {
+    urduDialogueIndx = randomIndex(urduDialogues);
+  }
+  console.log(urduDialogueIndx);
+  quizEl.textContent = urduDialogues[urduDialogueIndx];
+  answerEl.textContent = "?";
+});

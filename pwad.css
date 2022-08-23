@@ -14,9 +14,14 @@
   height: 40vh;
   border-radius: 4.6px;
   font-size: 1.2rem;
+  font-family: "Noto Sans Arabic", sans-serif;
 }
 
-.show-answer {
+.transition {
+  transition: all 1s;
+}
+
+.btn {
   padding: 5px 10px;
   background-color: var(--lavender);
   color: var(--teal);
