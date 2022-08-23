@@ -32,30 +32,37 @@ const dialoguesData = {
   "This is great": "هذا رائِعٌ / عظیم",
 };
 
-const urduDialogues = Object.keys(dialoguesData);
-const englishDialogues = Object.values(dialoguesData);
-
 const quizEl = document.getElementsByClassName("quiz")[0];
 const answerEl = document.getElementsByClassName("answer")[0];
 const nextBtnEl = document.getElementsByClassName("next-btn")[0];
 const showBtnEl = document.getElementsByClassName("show-answer")[0];
 
-function randomIndex(array) {
-  let randomIndx = Math.floor(Math.random() * array.length);
-  return randomIndx;
-}
+// Randomly Selection Algorithm
+// function randomIndex(array) {
+//   let randomIndx = Math.floor(Math.random() * array.length);
+//   return randomIndx;
+// }
+
+// nextBtnEl.addEventListener("click", function () {
+//   let urduDialogueIndx = randomIndex(urduEnglishDialogues);
+//   while (urduEnglishDialogues[urduDialogueIndx] === quizEl.textContent) {
+//     urduDialogueIndx = randomIndex(urduEnglishDialogues);
+//   }
+//   console.log(urduDialogueIndx);
+//   quizEl.textContent = urduEnglishDialogues[urduDialogueIndx];
+//   answerEl.textContent = "?";
+// });
 
 showBtnEl.addEventListener("click", function () {
   const arabicDialogue = quizEl.textContent;
   answerEl.textContent = dialoguesData[arabicDialogue];
 });
 
+const urduEnglishDialogues = Object.keys(dialoguesData);
+let count = 1;
+
 nextBtnEl.addEventListener("click", function () {
-  let urduDialogueIndx = randomIndex(urduDialogues);
-  while (urduDialogues[urduDialogueIndx] === quizEl.textContent) {
-    urduDialogueIndx = randomIndex(urduDialogues);
-  }
-  console.log(urduDialogueIndx);
-  quizEl.textContent = urduDialogues[urduDialogueIndx];
+  quizEl.textContent = urduEnglishDialogues[count];
+  count += 1;
   answerEl.textContent = "?";
 });

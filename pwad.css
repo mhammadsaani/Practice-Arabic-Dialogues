@@ -3,8 +3,13 @@
   --lavender: #dedede;
 }
 
+.header-heading a {
+  color: var(--lavender);
+  cursor: pointer;
+}
+
 .main-quiz {
-  width: 65%;
+  max-width: 65%;
   margin: 10% auto;
   background-color: var(--teal);
   display: flex;
@@ -17,15 +22,30 @@
   font-family: "Noto Sans Arabic", sans-serif;
 }
 
-.transition {
-  transition: all 1s;
+.btn-container {
+  display: flex;
+  justify-content: space-evenly;
+  width: 70%;
 }
 
 .btn {
-  padding: 5px 10px;
+  padding: 0.5em 0.75em;
   background-color: var(--lavender);
-  color: var(--teal);
   border: none;
   border-radius: 4.6px;
   cursor: pointer;
+  font-weight: bold;
+  color: black;
+  transition: all 0.2s;
+}
+
+.btn:hover,
+.btn:focus {
+  color: var(--teal);
+}
+
+@media (min-width: 600px) {
+  .main-quiz {
+    margin: 5% auto;
+  }
 }
