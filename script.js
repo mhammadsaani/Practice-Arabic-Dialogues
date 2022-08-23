@@ -32,11 +32,11 @@ const dialoguesData = {
   "This is great": "هذا رائِعٌ / عظیم",
 };
 
+const mainQuizEl = document.getElementsByClassName("main-quiz")[0];
 const quizEl = document.getElementsByClassName("quiz")[0];
 const answerEl = document.getElementsByClassName("answer")[0];
 const nextBtnEl = document.getElementsByClassName("next-btn")[0];
 const showBtnEl = document.getElementsByClassName("show-answer")[0];
-
 // Randomly Selection Algorithm
 // function randomIndex(array) {
 //   let randomIndx = Math.floor(Math.random() * array.length);
@@ -63,6 +63,16 @@ let count = 1;
 
 nextBtnEl.addEventListener("click", function () {
   quizEl.textContent = urduEnglishDialogues[count];
-  count += 1;
+  if (count === urduEnglishDialogues.length - 1) {
+    mainQuizEl.innerHTML = ` <h2> Over </h2> <button class="btn" onclick="startAgain()"=> Start Again? </button> `;
+  }
   answerEl.textContent = "?";
+  count += 1;
 });
+
+// const startAgainBtnEl = document.getElementsByClassName("start-again")[0];
+
+function startAgain() {
+  console.log("I am clicked");
+  mainQuizEl.textContent = "Reload the page";
+}
