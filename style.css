@@ -78,10 +78,27 @@ body {
 
 .main-items a:last-child {
   text-align: right;
+  flex-grow: 1;
 }
 
 .main-items a:hover,
 .main-items a:focus {
   cursor: pointer;
   transform: scale(1.1);
+}
+
+.border {
+  height: 50px;
+  width: 3px;
+  background-color: var(--teal);
+}
+
+/* =====
+  Media Query
+=====*/
+
+@media (min-width: 650px) {
+  .header-heading {
+    padding: 2em;
+  }
 }

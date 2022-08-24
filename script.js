@@ -37,6 +37,49 @@ const quizEl = document.getElementsByClassName("quiz")[0];
 const answerEl = document.getElementsByClassName("answer")[0];
 const nextBtnEl = document.getElementsByClassName("next-btn")[0];
 const showBtnEl = document.getElementsByClassName("show-answer")[0];
+const pwadBodyEl = document.getElementsByClassName("pwad-body")[0];
+const inputValue = document.getElementsByClassName("input")[0];
+const btnSubmit = document.getElementsByClassName("btn-submit")[0];
+const dialogueInput = document.getElementsByClassName("dialouge-input")[0];
+const urduEnglishDialogues = Object.keys(dialoguesData);
+let count = 1;
+let endValue = urduEnglishDialogues.length;
+
+btnSubmit.addEventListener("click", function () {
+  if (inputValue.value) {
+    endValue = Number(inputValue.value);
+  }
+  showBtnEl.disabled = false;
+  nextBtnEl.disabled = false;
+  dialogueInput.textContent = `Dialogue Number ${count}`;
+  quizEl.textContent = "میں فری ہوں";
+  quizEl.classList.remove("initial-quiz");
+  answerEl.classList.remove("initial-quiz");
+});
+
+showBtnEl.addEventListener("click", showAnswer);
+function showAnswer() {
+  const arabicDialogue = quizEl.textContent;
+  answerEl.textContent = dialoguesData[arabicDialogue];
+}
+
+nextBtnEl.addEventListener("click", nextBtn);
+function nextBtn() {
+  quizEl.textContent = urduEnglishDialogues[count];
+  if (count === endValue) {
+    mainQuizEl.innerHTML = ` <h2> Over </h2> <button class="btn" onclick="startAgain()"=> Start Again? </button> `;
+  }
+  answerEl.textContent = "?";
+  count += 1;
+  dialogueInput.textContent = `Dialogue Number ${count}`;
+}
+
+// const startAgainBtnEl = document.getElementsByClassName("start-again")[0];
+
+function startAgain() {
+  mainQuizEl.textContent = "Reload the Page";
+}
+
 // Randomly Selection Algorithm
 // function randomIndex(array) {
 //   let randomIndx = Math.floor(Math.random() * array.length);
@@ -52,27 +95,3 @@ const showBtnEl = document.getElementsByClassName("show-answer")[0];
 //   quizEl.textContent = urduEnglishDialogues[urduDialogueIndx];
 //   answerEl.textContent = "?";
 // });
-
-showBtnEl.addEventListener("click", function () {
-  const arabicDialogue = quizEl.textContent;
-  answerEl.textContent = dialoguesData[arabicDialogue];
-});
-
-const urduEnglishDialogues = Object.keys(dialoguesData);
-let count = 1;
-
-nextBtnEl.addEventListener("click", function () {
-  quizEl.textContent = urduEnglishDialogues[count];
-  if (count === urduEnglishDialogues.length - 1) {
-    mainQuizEl.innerHTML = ` <h2> Over </h2> <button class="btn" onclick="startAgain()"=> Start Again? </button> `;
-  }
-  answerEl.textContent = "?";
-  count += 1;
-});
-
-// const startAgainBtnEl = document.getElementsByClassName("start-again")[0];
-
-function startAgain() {
-  console.log("I am clicked");
-  mainQuizEl.textContent = "Reload the page";
-}

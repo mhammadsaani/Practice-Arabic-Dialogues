@@ -22,6 +22,38 @@
   font-family: "Noto Sans Arabic", sans-serif;
 }
 
+.initial-quiz {
+  font-size: 1rem;
+  font-weight: 400;
+  border: 2px solid var(--lavender);
+  padding: 3px;
+  border-radius: 6px;
+}
+
+.dialouge-input {
+  margin: 1em;
+  /* display: flex;
+  justify-content: space-around;
+  align-items: center; */
+}
+
+.dialouge-input input {
+  width: 30%;
+  /* line-height: 1.5; */
+  height: 30px;
+  border-radius: 6px;
+  border: none;
+  color: var(--teal);
+  text-align: center;
+}
+
+.dialouge-input input:focus {
+  outline-color: #dedede;
+  border-color: #dedede;
+  background-color: var(--lavender);
+  color: #204646;
+}
+
 .btn-container {
   display: flex;
   justify-content: space-evenly;

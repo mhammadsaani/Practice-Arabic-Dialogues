@@ -18,7 +18,7 @@
     <title>Practice Arabic Dialogues | PWAD</title>
   </head>
   <body>
-    <body>
+    <body class="pwad-body">
       <header class="header flex-center">
         <h1 class="header-heading"> 
           <a href="index.html">
@@ -26,16 +26,24 @@
         </a>
         </h1>
       </header>
+
       <main class="main-quiz">
-          <h3 class="quiz">میں فری ہوں</h3>
-          <h3 class="answer">
-            ?
+        <section class="dialouge-input">
+          <!-- <label for="starting-dialogue">Start</label>
+          <input class="input" id="starting-dialogue" type="number" min="1" max="99"> -->
+          <label for="ending-dialogue">Total Dialogues</label>
+          <input class="input" id="ending-dialogue" type="number" min="1" max="99">
+          <button type="submit" class="btn btn-submit">  Submit </button>
+        </section>
+          <h3 class="quiz initial-quiz">Urdu, English</h3>
+          <h3 class="answer initial-quiz">
+            Arabic
           </h3>
           <div class="btn-container">
-            <button class="btn show-answer"> Show Answer</button>
-            <button class="btn next-btn"> Next </button>
+            <button disabled class="btn show-answer"> Show Answer</button>
+            <button disabled class="btn next-btn"> Next </button>
         </div>
       </main>
-      <script src="script.js"></script>
-  </body>
+    </body>
+    <script src="script.js"></script>
 </html>
