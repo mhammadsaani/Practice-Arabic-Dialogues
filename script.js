@@ -46,8 +46,13 @@ let count = 1;
 let endValue = urduEnglishDialogues.length;
 
 btnSubmit.addEventListener("click", function () {
-  if (inputValue.value) {
+  if (inputValue.value && inputValue.value <= urduEnglishDialogues.length) {
     endValue = Number(inputValue.value);
+  } else if (
+    inputValue.value &&
+    inputValue.value > urduEnglishDialogues.length
+  ) {
+    endValue = urduEnglishDialogues.length;
   }
   showBtnEl.disabled = false;
   nextBtnEl.disabled = false;

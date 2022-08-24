@@ -10,7 +10,7 @@
 
 .main-quiz {
   max-width: 65%;
-  margin: 10% auto;
+  margin: 7.5% auto;
   background-color: var(--teal);
   display: flex;
   flex-direction: column;
