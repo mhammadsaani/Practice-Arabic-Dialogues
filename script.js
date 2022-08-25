@@ -88,7 +88,7 @@ btnSubmit.addEventListener("click", function () {
   nextBtnEl.disabled = false;
   nextBtnEl.addEventListener("click", function () {
     if (startValue === endValue) {
-      mainQuizEl.innerHTML = `<button class="btn btn-again"> Practice Again </button>`;
+      mainQuizEl.innerHTML = `<button class="btn btn-again"> Reload to Practice Again </button>`;
       mainQuizEl.style.height = "50vh";
     } else {
       startValue += 1;
