@@ -26,7 +26,7 @@
 
 .dialogue-input {
   /* border: 2px solid green; */
-  margin-bottom: 2em;
+  margin-bottom: 0em;
 }
 
 label {
@@ -77,6 +77,7 @@ input:focus {
 
 .btn-submit {
   font-size: 1.2em;
+  margin-bottom: 0;
 }
 
 /* .btn-container {
@@ -95,7 +96,7 @@ input:focus {
 
 .quiz-content {
   font-weight: bold;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
 .quiz-content p {
