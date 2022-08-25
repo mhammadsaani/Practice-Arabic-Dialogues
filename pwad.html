@@ -28,22 +28,41 @@
       </header>
 
       <main class="main-quiz">
-        <section class="dialouge-input">
-          <!-- <label for="starting-dialogue">Start</label>
-          <input class="input" id="starting-dialogue" type="number" min="1" max="99"> -->
-          <label for="ending-dialogue">Total Dialogues</label>
-          <input class="input" id="ending-dialogue" type="number" min="1" max="99">
+        <div class="dialogue-input">
+          <div class="dialogue-input-start flex">
+            <label for="start">Starting Dialogue No.</label>
+            <input class="input" id="start"  placeholder="1" type="number" min="0" max="99">
+          </div>
+          <div class="dialogue-input-end flex">
+            <label for="end">Ending Dialogue No.</label>
+            <input class="input" id="end" placeholder="30" type="number" min="0" max="99">
+         </div>
+         <button class="btn btn-submit" type="submit">Submit</button>
+        </div>
+        <div class="quiz-content">
+          <h3 class="quiz">English</h3>
+          <h3 class="answer">عربى</h3>
+        </div>
+          <!-- <section class="dialouge-input">
+          <div class="start-input">
+            <label for="starting-dialogue">Start</label>
+            <input class="input" id="starting-dialogue" type="number" min="1" max="99">
+          </div>
+          <div class="end-input">
+            <label for="ending-dialogue">End</label>
+            <input class="input" id="ending-dialogue" type="number" min="1" max="99">
+          </div>
           <button type="submit" class="btn btn-submit">  Submit </button>
         </section>
-          <h3 class="quiz initial-quiz">Urdu, English</h3>
+          <h3 class="quiz initial-quiz">English</h3>
           <h3 class="answer initial-quiz">
-            Arabic
+            عربى
           </h3>
           <div class="btn-container">
             <button disabled class="btn show-answer"> Show Answer</button>
             <button disabled class="btn next-btn"> Next </button>
         </div>
-      </main>
-    </body>
-    <script src="script.js"></script>
+        </main> -->
+      </body>
+      <script src="script.js"></script>
 </html>
