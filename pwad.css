@@ -3,6 +3,14 @@
   --lavender: #dedede;
 }
 
+body {
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+}
+html {
+  height: -webkit-fill-available;
+}
+
 .header-heading a,
 .header-heading a:hover,
 .header-heading a:focus {
@@ -14,7 +22,7 @@
   background-color: var(--lavender);
   color: var(--teal);
   font-family: "Noto Sans Arabic", sans-serif;
-  padding: 2em;
+  padding: 3em;
 }
 
 .flex {
