@@ -132,6 +132,7 @@ function mainFun() {
 
   dialogueInput.style.display = "none";
   quizContent.classList.add("modifier");
+  mainQuizEl.style.padding = "2em";
   quizContent.innerHTML = `<p class="dialogue-number">Dialogue No. ${startValue}</p>
   <h3 class="quiz">${urduEnglishDialogues[startValue - 1]}</h3>
   <h3 class="answer">? 🤔 ?</h3>
