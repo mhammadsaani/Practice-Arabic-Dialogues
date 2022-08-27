@@ -19,7 +19,6 @@ html {
 }
 
 .main-quiz {
-  background-color: var(--lavender);
   color: var(--teal);
   font-family: "Noto Sans Arabic", sans-serif;
   padding: 3em;
@@ -45,7 +44,7 @@ label {
 
 input {
   text-align: center;
-  color: inherit;
+  color: var(--teal);
   font-weight: bold;
   font-size: 1.2rem;
   width: 20%;
@@ -53,10 +52,12 @@ input {
   border-radius: 6px;
   border: none;
   transition: all 0.5s;
+  background-color: var(--lavender);
 }
 
 input::placeholder {
   font-size: 1rem;
+  color: rgb(56, 117, 104, 0.5);
 }
 
 input:hover,

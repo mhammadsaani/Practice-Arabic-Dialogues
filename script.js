@@ -9,26 +9,89 @@ const dialoguesData = {
   "What is going on?": "مَا الاَخْبَار",
   "I am busy": "اَنَا مَشْغُول",
   "See u tomorrow": "اَرَاکَ غَدَاً",
-  "Never mind / Don't Worry": "لا عَلَیْک",
+  "Do not worry / Never mind": "لا عَلَیْک",
   "Wait for me": "اِنْتَظِرْنی",
   "Thanks a lot": "شكراً جَزِيْلَاً",
   "I understand": "أفْھَمْ",
   "i am sure": "انا مُتَأکِّدٌ",
   "This is not right": "هذا لَیْسَ صَحَیْحًا",
-  "do u have any question": "هل لديك أيُ سؤال",
+  "Is there any question?": "ھْلْ ھُنَاکَ أَیُ سُؤُالٍ",
+  "Do you have any question": "هل لديك أَیُ سُؤُالٍ",
   Ofcourse: "طَبْعًا / قَطْعًا",
   "I am ready": "انا جاھِز",
-  "Don't eat too much": "لا تاکلْ کثیرا",
-  "What is new?": "ماالجدید",
-  "Good luck / Best of luck": "بالتوفیق",
-  "This is from Allah ": "و ما توفیق آلا باللہ",
-  "Allah guides us": "اللہ یھدیک",
-  "Allah protects us": "اللہ حِفظُک",
-  "Who is with you?": "من معک",
+  "Don't eat too much": "لَا تَأْکُلْ کَثِیرَاً",
+  "leave me alone": "اُتْرُکْنِی لَوَحْدِی",
+  "What is new?": "مَا الْجَدِیْد؟",
+  "Good luck / Best of luck": "بِالتَّوْفِیق",
+  "This is from Allah ": "و ما توفیق الا باللہ",
+  "Allah guides us": "اللہُ یَھْدِیْک",
+  "Allah protects us": "اللہُ یَحْمِیْک",
+  "Who is with you?": "مَنْ مَعَکَ؟",
   "Don't disturb me": "لا تُزعِجنِي",
   Yes: "نعم/ أجَل / بَلیٰ",
-  "Who said this?": "من قال ذلک",
-  "This is great": "هذا رائِعٌ / عظیم",
+  "Who said this?": "مَنْ قَالَ ذَلِک",
+  "This is great": "هذا رَائِعٌ / عَظِیم",
+  "I will call you": "سَأَتَصِلُ بِکَ",
+  "Let me think": "دَعْنِي أُفَكِّرُ",
+  "This gift is for you": "ھذہ ھَدِیّۃُ لَکَ",
+  "I agree": "انا اُوَافِقْ",
+  "Forgive me": "سَامِحْنِي",
+  "I sleep": "انا اَنَام",
+  "We sleep": "نحن ننام",
+  "He sleeps": "ھو یَنَام",
+  "She sleeps": "ھی تَنَام",
+  "I am here": "انا ھُنَا",
+  "I am very strong": "انا قَوِیٌ جِدًا",
+  "I love my brother": "انا أُحِبُّ أخِی",
+  "I love you": "انا احب انت / اُحِبّکَ",
+  "Where are u from?": "مِنْ أینَ أنْتَ؟",
+  "I am thinking": "انا اُفَکِّرُ",
+  "What are you doing?": "ماذا تَعْمَلٗ؟",
+  "I am sleepy": "اَغْلُبُنِی النُّعَاس",
+  "What is your opinion?": "ما رأيك؟",
+  "I love my family": "اَنَا أُحِبُّ اُسْرَتِی / عَائِلَتِی",
+  "I speak the Arabic Language": "أَنَا أَتَکَلَّمُ اللُّغَۃَ العَرَبِیَّۃ",
+  "I love the Arabic Language": "أنَا أُحِبُّ اللُّغَۃَ العَرَبِیَّۃ",
+  "I love reading": "انا أُحِبُّ القِرَاءَۃَ",
+  "I am feeling sad": "اَشْعُرُ بالسُّوءِ",
+  "We are friends": "أَصْبَحْنَا أَصْدِقَاءَ",
+  "I am sad": "أنا حَزِین",
+  "I am hungry": "أنا جَوْعَان جِدًا",
+  "I am angry": "أنا غَضْبَان",
+  "I am happy": "انا فَرْحَان",
+  "I am in fear": "أنا خَائِفْ",
+  "I am disgust": "انا قَرْفَانْ",
+  "I am surprised": "انا مُنْدَھِشْ",
+  "Are you sure?": "ھَل اَنْتَ مُتَأَکِد؟",
+  "Are you ready?": "ھَل اَنْتَ جَاھِز؟",
+  "Are you good?": "ھَل اَنْتَ بِخَیر؟",
+  "Are you serious?": "ھَل اَنْتَ جَاد؟",
+  "Are you sick?": "ھَل اَنْتَ مَرِیض؟",
+  "Are you busy?": "ھَل اَنْتَ مَشْغُول؟",
+  "Are you tired?": "ھَل اَنْتَ مُتَعِبْ؟",
+  "Are you married?": "ھَل اَنْتَ مُتَزَوِّج؟",
+  "Are you single?": "ھَل اَنْتَ أعْزَب؟",
+  "Are you blind?": "ھَل اَنْتَ أعَمِی؟",
+  "Don't forget?": "لا تُنْسْ",
+  "Don't be?": "لا تَکُن",
+  "Don't touch": "لا تَلْمَسْ",
+  "Don't say": "لا تَقُلْ",
+  "Don't leave": "لا تَغَادِر",
+  "Don't call": "لا تَنْصِل",
+  "Don't hurt": "لا تُؤذِی",
+  "Don't smoke": "لا تَدْخُنْ",
+  "Don't do": "لا تَفْعَلْ",
+  "Don't believe": "لا تَصْدِقْ ذَلک",
+  Early: "مُبَکِّرْ / بَاکِراً",
+  Late: "مُتَأَخِّراً",
+  Recently: "قَرِیباً",
+  Often: "غَالِباً",
+  Seldom: "نَادِراً",
+  Sometimes: "أحْیَاناً",
+  "At last": "أخِیراً",
+  Tomorrow: "غَدَاً",
+  Yesterday: "أمْسْ",
+  Now: "الآن",
 };
 
 const mainQuizEl = document.getElementsByClassName("main-quiz")[0];
@@ -47,8 +110,11 @@ let quizEl;
 let answerEl;
 let nextBtnEl;
 let dialougeNumberParagraphEl;
+let btnAgain;
 
-btnSubmit.addEventListener("click", function () {
+btnSubmit.addEventListener("click", mainFun);
+
+function mainFun() {
   endValue = Number(
     Boolean(endDialogue.value)
       ? endDialogue.value <= urduEnglishDialogues.length
@@ -63,7 +129,7 @@ btnSubmit.addEventListener("click", function () {
         : 1
       : 1
   );
-  console.log(startValue, endValue);
+
   dialogueInput.style.display = "none";
   quizContent.classList.add("modifier");
   quizContent.innerHTML = `<p class="dialogue-number">Dialogue No. ${startValue}</p>
@@ -71,12 +137,14 @@ btnSubmit.addEventListener("click", function () {
   <h3 class="answer">? 🤔 ?</h3>
   <div class="btn-container">
     <button  class="btn show-answer"> Show Answer</button>
-    <button disabled  class="btn next-btn"> Next </button>
+    <button  class="btn next-btn"> Next </button>
 </div>`;
+
+  quizEl = document.getElementsByClassName("quiz")[0];
+  answerEl = document.getElementsByClassName("answer")[0];
   showBtnEl = document.getElementsByClassName("show-answer")[0];
+
   showBtnEl.addEventListener("click", function () {
-    quizEl = document.getElementsByClassName("quiz")[0];
-    answerEl = document.getElementsByClassName("answer")[0];
     let temp = quizEl.textContent;
     // temp = temp.slice(1, temp.length - 1);
     console.log(temp);
@@ -85,11 +153,15 @@ btnSubmit.addEventListener("click", function () {
   });
 
   nextBtnEl = document.getElementsByClassName("next-btn")[0];
-  nextBtnEl.disabled = false;
   nextBtnEl.addEventListener("click", function () {
-    if (startValue === endValue) {
+    if (startValue === endValue - 1) {
       mainQuizEl.innerHTML = `<button class="btn btn-again"> Reload to Practice Again </button>`;
+      mainQuizEl.classList.add("flex-center");
       mainQuizEl.style.height = "50vh";
+      btnAgain = document.getElementsByClassName("btn-again")[0];
+      btnAgain.addEventListener("click", function () {
+        location.reload();
+      });
     } else {
       startValue += 1;
       dialougeNumberParagraphEl =
@@ -99,7 +171,7 @@ btnSubmit.addEventListener("click", function () {
       answerEl.textContent = "? 🤔 ?";
     }
   });
-});
+}
 
 // Previous Submit Function
 // if (
