@@ -77,7 +77,7 @@ const dialoguesData = {
   "Don't touch": "لا تَلْمَسْ",
   "Don't say": "لا تَقُلْ",
   "Don't leave": "لا تَغَادِر",
-  "Don't call": "لا تَنْصِل",
+  "Don't call": "لا تَتَصِل",
   "Don't hurt": "لا تُؤذِی",
   "Don't smoke": "لا تَدْخُنْ",
   "Don't do": "لا تَفْعَلْ",
