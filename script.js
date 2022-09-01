@@ -31,7 +31,7 @@ const dialoguesData = {
   Yes: "نعم/ أجَل / بَلیٰ",
   "Who said this?": "مَنْ قَالَ ذَلِک",
   "This is great": "هذا رَائِعٌ / عَظِیم",
-  "I will call you": "سَأَتَصِلُ بِکَ",
+  "I will call you": "سَأَتَّصِلُ بِکَ",
   "Let me think": "دَعْنِي أُفَكِّرُ",
   "This gift is for you": "ھذہ ھَدِیّۃُ لَکَ",
   "I agree": "انا اُوَافِقْ",
