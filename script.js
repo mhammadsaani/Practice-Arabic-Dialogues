@@ -79,7 +79,7 @@ const dialoguesData = {
   "Don't leave": "لا تَغَادِر",
   "Don't call": "لا تَتَصِل",
   "Don't hurt": "لا تُؤذِی",
-  "Don't smoke": "لا تَدْخُنْ",
+  "Don't smoke": "لا تَدَّخُنْ",
   "Don't do": "لا تَفْعَلْ",
   "Don't believe": "لا تَصْدِقْ ذَلک",
   Early: "مُبَکِّرْ / بَاکِراً",
