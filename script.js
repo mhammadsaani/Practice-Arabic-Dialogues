@@ -43,7 +43,7 @@ const dialoguesData = {
   "I am here": "انا ھُنَا",
   "I am very strong": "انا قَوِیٌ جِدًا",
   "I love my brother": "انا أُحِبُّ أخِی",
-  "I love you": "انا احب انت / اُحِبّکَ",
+  "I love you": "انا أُحِبُّ انت / اُحِبّکَ",
   "Where are u from?": "مِنْ أینَ أنْتَ؟",
   "I am thinking": "انا اُفَکِّرُ",
   "What are you doing?": "ماذا تَعْمَلٗ؟",
