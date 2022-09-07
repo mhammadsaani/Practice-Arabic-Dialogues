@@ -111,6 +111,7 @@ let answerEl;
 let nextBtnEl;
 let dialougeNumberParagraphEl;
 let btnAgain;
+let prevBtnEl;
 
 btnSubmit.addEventListener("click", mainFun);
 
@@ -137,6 +138,7 @@ function mainFun() {
   <h3 class="quiz">${urduEnglishDialogues[startValue - 1]}</h3>
   <h3 class="answer">? 🤔 ?</h3>
   <div class="btn-container">
+    <button class="btn prev-btn"> Prev </button>
     <button  class="btn show-answer"> Show Answer</button>
     <button  class="btn next-btn"> Next </button>
 </div>`;
@@ -144,7 +146,8 @@ function mainFun() {
   quizEl = document.getElementsByClassName("quiz")[0];
   answerEl = document.getElementsByClassName("answer")[0];
   showBtnEl = document.getElementsByClassName("show-answer")[0];
-
+  prevBtnEl = document.getElementsByClassName("prev-btn")[0];
+  console.log(prevBtnEl);
   showBtnEl.addEventListener("click", function () {
     let temp = quizEl.textContent;
     // temp = temp.slice(1, temp.length - 1);
@@ -165,6 +168,17 @@ function mainFun() {
       });
     } else {
       startValue += 1;
+      dialougeNumberParagraphEl =
+        document.getElementsByClassName("dialogue-number")[0];
+      dialougeNumberParagraphEl.textContent = `Dialogue No. ${startValue}`;
+      quizEl.textContent = `${urduEnglishDialogues[startValue]}`;
+      answerEl.textContent = "? 🤔 ?";
+    }
+  });
+
+  prevBtnEl.addEventListener("click", function () {
+    if (startValue > 0) {
+      startValue -= 1;
       dialougeNumberParagraphEl =
         document.getElementsByClassName("dialogue-number")[0];
       dialougeNumberParagraphEl.textContent = `Dialogue No. ${startValue}`;

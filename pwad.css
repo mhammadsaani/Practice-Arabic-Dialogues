@@ -89,12 +89,9 @@ input:focus {
   margin-bottom: 0;
 }
 
-/* .btn-container {
-  display: flex;
-  justify-content: space-around;
-  border: 2px solid gray;
-  max-width: 400px;
-} */
+.btn-container > button {
+  margin-right: 5px;
+}
 
 .modifier {
   height: 35vh;
