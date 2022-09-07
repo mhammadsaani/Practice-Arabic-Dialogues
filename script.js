@@ -177,7 +177,7 @@ function mainFun() {
   });
 
   prevBtnEl.addEventListener("click", function () {
-    if (startValue > 0) {
+    if (startValue > 1) {
       startValue -= 1;
       dialougeNumberParagraphEl =
         document.getElementsByClassName("dialogue-number")[0];
